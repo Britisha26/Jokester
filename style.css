@@ -1,0 +1,121 @@
+body {
+    background: url(images/joke.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: rgb(246, 209, 158);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    scrollbar-color: rgb(51, 36, 22) rgb(39, 23, 23);
+    color: rgb(246, 209, 158);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    gap: 30px;
+}
+
+h3 {
+    color: rgb(246, 209, 158);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: rgba(68, 50, 44, 0.587);
+    font-family: "Zen Dots", serif;
+    text-align: center;
+    width: 300px;
+    padding: 20px 50px 30px;
+    border-radius: 8px;
+}
+
+button {
+    background: linear-gradient(rgb(126, 72, 51), rgb(23, 8, 8));
+    color: rgb(193, 161, 121);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 8px;
+    border: 0.5px outset rgb(29, 14, 1);
+}
+
+button:hover {
+    background: linear-gradient(rgb(143, 84, 61), rgb(20, 7, 7));
+}
+
+.joke-div {
+    background-color: rgba(68, 50, 44, 0.587);
+    color: #f6e9b0d2;
+    white-space: pre-line;
+    font-family: "Zen Dots", serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 20px 50px 30px;
+    margin: 0 auto;
+    max-width: 700px;
+    min-width: 300px;
+    border-radius: 8px;
+    display: none;
+}
+
+.select-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 20px;
+}
+
+label {
+    color: rgb(246, 209, 158);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+}
+
+select {
+    background-color: rgb(37, 19, 5);
+    color: rgb(238, 197, 150);
+    width: 150px;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;            
+    font-weight: 100;
+    text-align: center;
+    border: 1.5px solid rgb(27, 17, 28);
+    padding: 10px 20px;
+    margin-left: 1rem;
+    z-index: 20;                /*the coolest thing, assign the way you like*/
+    outline: none;          /*white line around what you use on browser*/
+    cursor: pointer;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(51, 36, 22) rgb(39, 23, 23);
+}   
+
+select option {
+    padding: 4px 18px;
+}
+
+select:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+option:hover{
+    background-color: #412c1f;
+}

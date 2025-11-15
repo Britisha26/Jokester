@@ -1,21 +1,25 @@
 body {
     background: url(images/joke.webp) no-repeat center fixed;
     background-size: cover;
-    margin:0;
     color: rgb(246, 209, 158);
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
+    min-height: 100vh;
 }
 
 html {
     scrollbar-color: rgb(51, 36, 22) rgb(39, 23, 23);
     color: rgb(246, 209, 158);
+     overscroll-behavior-y: none;
 }
 
 body, html {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .container {
@@ -228,6 +232,7 @@ option:hover{
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(9px);
     width: 100%;
+    margin-bottom: 0;
     background: rgba(0,0,0,0.25);
 }
 

@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 html {
@@ -16,18 +16,23 @@ html {
 }
 
 body, html {
+  overflow: auto;
+
     overflow-x: hidden;
+  position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    width: 100%;
+    height: 100%;         
     gap: 30px;
 }
 
@@ -234,6 +239,9 @@ option:hover{
     flex-shrink: 0;
     margin: 0;
     background: rgba(0,0,0,0.25);
+            position:absolute;
+            bottom: 0;
+
 }
 
 .card-text {
